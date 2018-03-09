@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-my-themes" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/03/09/my-themes/" class="article-date">
+  <time datetime="2018-03-09T07:22:28.706Z" itemprop="datePublished">2018-03-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>===========</p>
+<p>categories: </p>
+<ul>
+<li>日记 </li>
+</ul>
+<p>tags: </p>
+<ul>
+<li><p>Hexo </p>
+</li>
+<li><p>node.js</p>
+</li>
+</ul>
+<p>===========</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/03/09/my-themes/" data-id="cjejrqmlf00030noz8c905ttq" class="article-share-link">Teilen</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-My-projectes" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/02/26/My-projectes/" class="article-date">
+  <time datetime="2018-02-26T01:50:26.000Z" itemprop="datePublished">2018-02-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/02/26/My-projectes/">vue上线部署环境</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <!-- <html>
+  <div class="box" style="display:block;width: 100px;height:100px;background:pink;">88888</div>
+</html> -->
+<p>1、首先我们在写vue项目时，要搭建好基本的环境<br>   (1)、从node官网下载并安装node，安装步骤很简单，只要一路“next”就可以了。<br>          安装完成后，打开命令行工具输入命令node -v，如果出现对应版本号，就说明安装成功了。<br>     (2)、点击进入淘宝的cnpm网站,里面有详细的配置方法<br>         或者直接在命令行输入：<br>         npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a><br>         输入cnpm -v，可以查看当前cnpm版本，这个和npm的版本还是不一样的。</p>
+<p>2、 在用 vue.js 构建大型应用时推荐使用 npm 安装，npm         能很好地和诸如 webpack 或 browserify 模块打包器配合使用。vue提供了vue脚手架vue-cli，可用于快速搭建大型单页应用。<br>      npm install –global vue-cli<br>      cnpm install –global vue-cli</p>
+<p>   ##创建一个基于 webpack 模板的新项目</p>
+<p>3、初始化一个项目 （运行初始化命令的时候可以输入几个基本的选项，如项目名称，描述，作者等信息，如果不想填直接回车默认就好，项目的名称不能大写，不然会报错。）<br>    vue init webpack my-project</p>
+<p>4、安装项目所需要的依赖<br>  npm install<br>  cnpm install</p>
+<p>5、运行项目 (出现Welcome to Your Vue.js App；如果看到这个界面，说明配置成功)<br>   npm run dev</p>
+<p>  ##接下来就是和后端配合调试数据<br>6、前端开发过程中使用后台的API的话，可以通过配置proxyTable来将相应的后台请求代理到专用的API服务器；<br>   在config=&gt;index.js=&gt;修改proxyTable如下代码所示:<br>        module.exports = {<br>          dev: {<br>            // Paths<br>            autoOpenBrowser: false,<br>            assetsSubDirectory: ‘static’,<br>            assetsPublicPath: ‘/‘,//上线时将”/“更换成’./‘<br>            proxyTable: {<br>              ‘/api’:{<br>                target: ‘<a href="http://178.12.3.98:8089&#39;,//178.12.3.98所要连接的服务器ip地址" target="_blank" rel="noopener">http://178.12.3.98:8089&#39;,//178.12.3.98所要连接的服务器ip地址</a><br>                changeOrigin:true,<br>                pathRewrite:{<br>                  ‘^/api/‘:’’<br>                }<br>              }<br>            },</p>
+<p>7、vue组件化<br>    具体操作请参考<a href="https://cn.vuejs.org/v2/guide/installation.html" target="_blank" rel="noopener">https://cn.vuejs.org/v2/guide/installation.html</a></p>
+<p>8、vue提供了类似于javascript的ajax，axios基于 Promise 的 HTTP 请求客户端，可同时在浏览器和 node.js 中使用；<br>  npm install axios；具体参考<a href="https://www.npmjs.com/package/vue-axios" target="_blank" rel="noopener">https://www.npmjs.com/package/vue-axios</a><br>  配置：<br>          在main.js中import axios from ‘axios’；Vue.prototype.$axios = axios<br>  调用：<br>          //get请求<br>          axios.get(‘/user?ID=12345’)<br>          .then(function (response) {<br>            console.log(response);//所请求得到的数据<br>          })<br>          .catch(function (response) {<br>            console.log(response);<br>          });<br>   跨域:<br>       headers:{<br>            ‘Access-Control-Allow-Origin’:’*’<br>      }<br>      <!-- img后加随机数是为了：不读取页面缓存，可以使浏览器的缓存失效，和验证码一样的原理，其实这个不是随机的，而是一个密码一样的东西。只是他表现出来了而已比如说，你取回密码，那个地址上，就肯定有一个是类似这样的地址。而你看到的地址，可能就是这样的东西
+当然，更加变态的像淘宝，可能他就是分类的编号和查询的内容，只是他加密了而已另外，随机数字还有个经常用到的方法，那就是防止IE缓存，因为随机地址的存在，可以确保每次访问的URL都不会被缓存起 https://www.cnblogs.com/ang-/archive/2017/06/26/7082202.html--></p>
+<p>##目前整理到此为止，某些地方没有整理到位，敬请谅解，如有疑问可以联系qq:2373047976；</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/02/26/My-projectes/" data-id="cjejrqml200000nozwprhele7" class="article-share-link">Teilen</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/作为一名前端人员，面临日益更新的框架-类库，不仅要及时学习还要深入研究，最近把vue从搭框架到整理打包上线，一一列举出来/">作为一名前端人员，面临日益更新的框架 类库，不仅要及时学习还要深入研究，最近把vue从搭框架到整理打包上线，一一列举出来.</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/02/26/hello-world/" class="article-date">
+  <time datetime="2018-02-26T01:39:15.488Z" itemprop="datePublished">2018-02-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/02/26/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/02/26/hello-world/" data-id="cjejrqml800010nozykbg8kpa" class="article-share-link">Teilen</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/作为一名前端人员，面临日益更新的框架-类库，不仅要及时学习还要深入研究，最近把vue从搭框架到整理打包上线，一一列举出来/">作为一名前端人员，面临日益更新的框架 类库，不仅要及时学习还要深入研究，最近把vue从搭框架到整理打包上线，一一列举出来.</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/作为一名前端人员，面临日益更新的框架-类库，不仅要及时学习还要深入研究，最近把vue从搭框架到整理打包上线，一一列举出来/" style="font-size: 10px;">作为一名前端人员，面临日益更新的框架 类库，不仅要及时学习还要深入研究，最近把vue从搭框架到整理打包上线，一一列举出来.</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archiv</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">letzter Beitrag</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/03/09/my-themes/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/02/26/My-projectes/">vue上线部署环境</a>
+          </li>
+        
+          <li>
+            <a href="/2018/02/26/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
